@@ -2,26 +2,112 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0 auto;
+  max-width: 400px;  
+} 
+header{
+  margin: 0;
+  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 0px; 
+  background-image: url(burger.jpg); 
+  height: 100px;
+  background-size:  cover;
+  background-repeat: no-repeat;
+  background-position-y: -80px;
+  color: whitesmoke 
+}
+
+h2{
+  margin: 0;
+}
+#tagline{
+  margin: 0;
+}
+#icon{
+  font-size: 50px;
+}
+.main{
+  display: flex;
+  margin: 0px 30px ;
+  justify-content:  flex-start;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  position: relative 
+}
+.addItemBtn{
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  padding: 0 8px;
+  border: 1px solid grey;
+  border-radius: 500px;
+  font-size: 30px;
+  font-weight:  100;
+  background-color: #ffffff
+}
+
+.no-click{
+  pointer-events: none;
+}
+.remove-btn{
+  border: none;
+  background-color: #ffffff;
+  color: grey;
+}
+.bill-items{
+  display: flex;
+  justify-content: space-between;
+}
+.bill-desc{
+  display: flex;
+}
+.hidden{
+  display: none;
+  padding: 4em;
+}
+#center-text{
+  text-align: center;
+}
+.continue{
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #16DB99;
+}
+.payment{
+  display: none;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  border: 2px solid black; 
+  background-color: white;
+  text-align: center;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:  space-around; 
+  height: 200px
+}
+input{
+  padding: 10px 35px;
+  border: 2px grey solid;
+  border-radius: 4px;
+  color: grey;
+}
+#finally{
+  padding: 10px 20px;
+  background-color: #ECFDF5;
+  text-align: center;
+  color: #065F46;
 }
