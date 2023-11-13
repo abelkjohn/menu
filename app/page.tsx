@@ -1,7 +1,9 @@
-import { menuArray } from './data.js'
+"use client"
+import React from 'react'
 import Header from './components/Header.jsx' 
 import Items from "./components/MenuItems.jsx"
-import TotalPrice from "./components/TotalPrice.jsx"
+
+
 import Payment from "./components/Payment.jsx"
 
 export default function Home() {
@@ -10,10 +12,8 @@ export default function Home() {
       <div>
         <Header />
         <Items />
-        <TotalPrice />
-        <Payment />
-        <div id='finally'>
-        </div>
+        <Payment/>
+        <div className="hidden" id='finally'> </div>
       </div>
     )
 }

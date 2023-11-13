@@ -7,16 +7,14 @@ body {
   margin: 0 auto;
   max-width: 400px;  
 } 
-header{
+#head{
   margin: 0;
-  padding: 30px;
-  padding-top: 40px;
-  padding-bottom: 0px; 
+  padding: 90px 1em 1em 1em ;
   background-image: url(burger.jpg); 
-  height: 100px;
+  height: 150px;
   background-size:  cover;
   background-repeat: no-repeat;
-  background-position-y: -80px;
+  background-position: center;
   color: whitesmoke 
 }
 
@@ -92,13 +90,7 @@ h2{
   background-color: white;
   text-align: center;
 }
-.details{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:  space-around; 
-  height: 200px
-}
+
 input{
   padding: 10px 35px;
   border: 2px grey solid;
@@ -110,4 +102,20 @@ input{
   background-color: #ECFDF5;
   text-align: center;
   color: #065F46;
+}
+
+#card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.button-color {
+  background-color: #16DB99;
+}
+
+.border-color {
+  border-color: #16DB99;
 }
